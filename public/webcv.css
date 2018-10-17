@@ -45,7 +45,6 @@ a:hover {
 }
 
 #workhistoryicon {
-  clear: both;
   width: 10%;
   padding: 3rem;
 }
@@ -56,20 +55,21 @@ img:hover {
 }
 
 button {
-  clear: both;
   width: 10%;
-  padding: 3rem;
+  padding: 1rem;
   background-color: hsla(230, 100%, 30%, 0.5);
-  border: hsla(230, 100%, 30%, 0.5);
-  border-radius: 10px;
-  text-align: center;
+  background-clip: padding-box;
+  border: 5px solid hsla(230, 100%, 30%, 0.5);
+  justify-content: center;
+  color: hsla(0, 0%, 100%, 1);
 }
 
 button:hover {
   transform: scale(1.1);
   background-color: hsla(0, 0%, 100%, 1);
-  border: hsla(230, 100%, 30%, 0.5);
-  border-radius: 10px;
+  background-clip: padding-box;
+  border: 5px solid hsla(230, 100%, 30%, 0.5);
+  color: hsla(0, 0%, 0%, 1);
 }
 
 .contact {
