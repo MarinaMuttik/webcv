@@ -1,7 +1,6 @@
 require 'sinatra/base'
 require 'slim'
 
-
 class Public < Sinatra::Base
 get '/' do
   slim :index
@@ -10,11 +9,11 @@ end
 
 class Protected < Sinatra::Base
 
-  use Rack::Auth::Basic, "Please enter login details" do |username, password|
+  use Rack::Auth::Basic, "Authentication" do |username, password|
     username == "marina" && password == "workhis1"
   end
 
-get '/workhistory' do
+get '' do
   slim :'workhistory/index'
 end
 
