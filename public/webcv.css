@@ -1,17 +1,59 @@
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.25em;
-  background-color: hsla(210, 100%, 50%, 0.5);
+  background-color: hsla(180, 65%, 60%, 0.5);
   text-align: center;
   color: hsla(0, 0%, 100%, 1);
   z-index: 0;
   overflow: visible;
 }
 
+header {
+  background-color: hsla(180, 60%, 50%, 1);
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header a {
+  background-color: hsla(180, 90%, 30%, 0.5);
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+header a:hover {
+  background-color: hsla(180, 95%, 25%, 0.5);
+}
+
+header h1, header a {
+  float: left;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+nav {
+  float: right;
+}
+
+@media screen and (max-width: 940px) {
+  header a {
+    float: none;
+    display: block;
+  }
+  nav {
+    float: none;
+  }
+  header h1 {
+    float: none;
+    line-height: 1em;
+  }
+}
+
 p {
   font-size: 1em;
 }
-
 
 h1 {
   font-size: 3em;
@@ -22,21 +64,122 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
+  text-decoration: underline;
   line-height: 1.25em;
+  margin: 1.5rem;
+  border-bottom: 0.02rem dashed hsla(0, 0%, 100%, 1);
 }
 
 h3 {
   font-size: 1.3em;
   font-weight: 700;
   line-height: 1.25em;
+  margin: 1.5rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: bold;
+  line-height: 1.1em;
+  margin: 1rem;
+}
+
+hr {
+  clear: both;
+  margin: 2rem auto;
+  border: 0.02rem dashed hsla(0, 0%, 100%, 1);
 }
 
 a {
   text-decoration: underline;
   color: hsla(0, 0%, 100%, 1);
-  margin: 1rem;
+  margin: 2rem;
 }
 
 a:hover {
-  font-weight: bold;
+  -webkit-text-stroke: 0.05em;
+}
+
+.dates {
+    font-style: italic;
+    margin: 1rem;
+}
+
+main {
+  width: 100%;
+  }
+
+section {
+  background-color: hsla(180, 80%, 40%, 0.4);
+  width: 70%;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 1rem;
+  min-width: 20rem;
+  box-sizing: border-box;
+}
+
+ul li {
+  padding: 0.5rem 0rem;
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "♦";
+  padding-right: 0.5rem;
+}
+
+.buttons {
+  width: 15%;
+  box-sizing: border-box;
+}
+
+#workicon, button {
+  width: 6rem;
+  height: 6rem;
+  z-index: 2;
+}
+
+#workicon {
+  float: right;
+}
+
+img:hover {
+  opacity: 0.75;
+  transform: scale(1.1);
+}
+
+button {
+  background-color: hsla(180, 100%, 30%, 0.5);
+  background-clip: padding-box;
+  border: 5px solid hsla(180, 100%, 30%, 0.5);
+  color: hsla(0, 0%, 100%, 1);
+  font-family: inherit;
+  font-size: inherit;
+  float: left;
+  outline: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+button:hover {
+  transform: scale(1.1);
+  font-size: 1rem;
+  background-color: hsla(180, 65%, 90%, 1);
+  background-clip: padding-box;
+  border: 5px solid hsla(180, 100%, 30%, 0.5);
+  color: hsla(180, 100%, 30%, 1);
+}
+
+footer {
+  bottom: 0;
+  background-color: hsla(180, 60%, 50%, 0.7);
+  width: 100%;
+  height: 3rem;
+}
+
+.contact {
+  line-height: 3rem;
 }
