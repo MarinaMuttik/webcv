@@ -122,10 +122,10 @@ section {
 }
 
 ul li {
+  text-align: left;
   padding: 0.5rem 0rem;
   list-style-type: none;
 }
-
 ul li::before {
   content: "♦";
   padding-right: 0.5rem;
