@@ -67,7 +67,6 @@ h2 {
   text-decoration: underline;
   line-height: 1.25em;
   margin: 1.5rem;
-  border-bottom: 0.02rem dashed hsla(0, 0%, 100%, 1);
 }
 
 h3 {
@@ -87,7 +86,7 @@ h4 {
 hr {
   clear: both;
   margin: 2rem auto;
-  border: 0.02rem dashed hsla(0, 0%, 100%, 1);
+  border-bottom: 0.02rem dashed hsla(0, 0%, 100%, 1);
 }
 
 a {
