@@ -22,19 +22,29 @@
   font-style: italic;
 }
 
+:root {
+  --lightest-teal: hsla(180, 65%, 90%, 1);
+  --light-teal: hsla(180, 65%, 75%, 1);
+  --teal: hsla(180, 60%, 50%, 1);
+  --transp-teal: hsla(180, 80%, 40%, 0.5);
+  --dark-teal: hsla(180, 90%, 30%, 1);
+  --darkest-teal: hsla(180, 100%, 15%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --black: hsla(0, 100%, 0%, 1);
+}
 
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.25em;
-  background-color: hsla(180, 65%, 60%, 0.5);
+  background-color: var(--light-teal);
   text-align: center;
-  color: hsla(0, 0%, 100%, 1);
+  color: var(--white);
   z-index: 0;
   overflow: visible;
 }
 
 header {
-  background-color: hsla(180, 60%, 50%, 1);
+  background-color: var(--teal);
   overflow: hidden;
   padding: 1rem;
   width: 100%;
@@ -42,14 +52,14 @@ header {
 }
 
 header a {
-  background-color: hsla(180, 90%, 30%, 0.5);
+  background-color: var(--dark-teal);
   font-size: 1.2em;
   text-align: center;
   border-radius: 0.5em;
 }
 
 header a:hover {
-  background-color: hsla(180, 95%, 25%, 0.5);
+  background-color: var(--darkest-teal);
 }
 
 header h1, header a {
@@ -73,6 +83,12 @@ nav {
   header h1 {
     float: none;
     line-height: 1em;
+  }
+  section {
+    width: 100% !important;
+  }
+  .buttons {
+    width: fit-content !important;
   }
 }
 
@@ -108,15 +124,15 @@ h4 {
   margin: 1rem;
 }
 
-hr {
-  clear: both;
+.separator {
   margin: 2rem auto;
-  border: 0.02rem dashed hsla(0, 0%, 100%, 1);
+  border: thin dashed var(--white);
+
 }
 
 a {
   text-decoration: underline;
-  color: hsla(0, 0%, 100%, 1);
+  color: var(--white);
   nav {
     margin: 1rem;
   }
@@ -136,8 +152,8 @@ main {
   }
 
 section {
-  background-color: hsla(180, 80%, 40%, 0.4);
-  width: 70%;
+  background-color: var(--transp-teal);
+  width: 85%;
   margin: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -183,10 +199,10 @@ ul li::before {
 }
 
 #worktext {
-  background-color: hsla(180, 100%, 30%, 0.5);
+  background-color: var(--dark-teal);
   background-clip: padding-box;
-  border: 5px solid hsla(180, 100%, 30%, 0.5);
-  color: hsla(0, 0%, 100%, 1);
+  border: 5px solid var(--dark-teal);
+  color: var(--white);
   text-decoration: none;
   float: right;
   text-align: center;
@@ -198,9 +214,9 @@ ul li::before {
 #worktext:hover {
   transform: scale(1.1);
   font-size: 1rem;
-  background-color: hsla(180, 65%, 90%, 1);
+  background-color: var(--lightest-teal);
   background-clip: padding-box;
-  border: 5px solid hsla(180, 100%, 30%, 0.5);
+  border: 5px solid var(--dark-teal);
   color: hsla(180, 100%, 30%, 1);
   -webkit-text-stroke: 0;
 }
