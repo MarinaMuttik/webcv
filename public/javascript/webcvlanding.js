@@ -5,11 +5,11 @@ function changeFloat() {
   let icon = document.getElementById("workicon");
   let text = document.getElementById("worktext");
 
-  if (icon.style.float == 'left') {
-    icon.style.float = 'right'
-    text.style.float = 'left'
-  } else {
+  if (icon.style.float == 'right') {
     icon.style.float = 'left'
     text.style.float = 'right'
+  } else {
+    icon.style.float = 'right'
+    text.style.float = 'left'
   };
 };

@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Raleway";
+  src:
+    url("/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src:
+    url("/fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src:
+    url("/fonts/Raleway/Raleway-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.25em;
@@ -92,7 +117,9 @@ hr {
 a {
   text-decoration: underline;
   color: hsla(0, 0%, 100%, 1);
-  margin: 2rem;
+  nav {
+    margin: 1rem;
+  }
 }
 
 a:hover {
@@ -120,65 +147,60 @@ section {
   box-sizing: border-box;
 }
 
+.left {
+  text-align: left;
+}
+
 ul li {
   text-align: left;
   padding: 0.5rem 0rem;
   list-style-type: none;
 }
+
 ul li::before {
   content: "♦";
   padding-right: 0.5rem;
 }
 
 .buttons {
-  width: 15%;
-  box-sizing: border-box;
+  width: fit-content;
 }
 
-#workicon, button {
-  width: 6rem;
+#workicon, #worktext {
   height: 6rem;
   z-index: 2;
+  margin: 0.5rem;
 }
 
 #workicon {
-  float: right;
+  width: 6rem;
+  float: left;
 }
 
-img:hover {
+#workicon:hover {
   opacity: 0.75;
   transform: scale(1.1);
 }
 
-button {
+#worktext {
   background-color: hsla(180, 100%, 30%, 0.5);
   background-clip: padding-box;
   border: 5px solid hsla(180, 100%, 30%, 0.5);
   color: hsla(0, 0%, 100%, 1);
-  font-family: inherit;
-  font-size: inherit;
-  float: left;
-  outline: none;
+  text-decoration: none;
+  float: right;
   text-align: center;
   box-sizing: border-box;
+  padding: 2rem 0.5rem;
+  word-wrap: normal;
 }
 
-button:hover {
+#worktext:hover {
   transform: scale(1.1);
   font-size: 1rem;
   background-color: hsla(180, 65%, 90%, 1);
   background-clip: padding-box;
   border: 5px solid hsla(180, 100%, 30%, 0.5);
   color: hsla(180, 100%, 30%, 1);
-}
-
-footer {
-  bottom: 0;
-  background-color: hsla(180, 60%, 50%, 0.7);
-  width: 100%;
-  height: 3rem;
-}
-
-.contact {
-  line-height: 3rem;
+  -webkit-text-stroke: 0;
 }

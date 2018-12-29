@@ -15,4 +15,8 @@ class Protected < Sinatra::Base
     slim :'academichistory/index'
   end
 
+  get '/contact' do
+    slim :'contact/index'
+  end
+
 end
