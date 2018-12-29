@@ -84,11 +84,21 @@ nav {
     float: none;
     line-height: 1em;
   }
-  section {
+  .content {
     width: 100% !important;
   }
-  .buttons {
-    width: fit-content !important;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 0.7rem;
+  }
+  .content {
+    padding: 0 !important;
+  }
+  section {
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
 
@@ -151,7 +161,7 @@ main {
   width: 100%;
   }
 
-section {
+.content, section {
   background-color: var(--transp-teal);
   width: 85%;
   margin: 1rem;
