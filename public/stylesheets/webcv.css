@@ -177,6 +177,12 @@ main {
   text-align: left;
 }
 
+ul.sublist li {
+  padding: 0.25rem 0rem;
+  margin-left: 2rem;
+  font-size: 0.85rem;
+}
+
 ul li {
   text-align: left;
   padding: 0.5rem 0rem;
@@ -187,6 +193,7 @@ ul li::before {
   content: "♦";
   padding-right: 0.5rem;
 }
+
 
 .buttons {
   width: fit-content;
