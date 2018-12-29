@@ -90,8 +90,8 @@ nav {
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    font-size: 0.7rem;
+  main {
+    font-size: 0.7rem !important;
   }
   .content {
     padding: 0 !important;
@@ -99,6 +99,15 @@ nav {
   section {
     width: 100% !important;
     margin: 0 !important;
+  }
+  #workicon, #worktext {
+    height: 4rem !important;
+  }
+  #workicon {
+    width: 4rem !important;
+  }
+  #worktext {
+    padding: 1rem 0.5rem !important;
   }
 }
 
@@ -180,7 +189,7 @@ main {
 ul.sublist li {
   padding: 0.25rem 0rem;
   margin-left: 2rem;
-  font-size: 0.85rem;
+  font-size: 0.85em;
 }
 
 ul li {
