@@ -1,4 +1,4 @@
-class CreateMessages < ActiveRecord::Migration[5.2]
+class CreateMessage < ActiveRecord::Migration[5.2]
   def change
     create_table :messages, force: true do |t|
       t.string :contact_name

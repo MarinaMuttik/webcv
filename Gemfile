@@ -6,6 +6,7 @@ gem "sinatra"
 gem "slim"
 gem "activerecord"
 gem "sinatra-activerecord"
+gem 'pg'
+gem 'rake'
 gem "table_print"
 gem "pry"
-gem 'pg'

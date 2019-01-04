@@ -1,6 +1,13 @@
-development:
+default: &default
   adapter: postgresql
-  database: development
-  username: <%= ENV['PG_USER'] %>
-  password: <%= ENV['PG_PASS'] %>
-  host: localhost
+  encoding: utf8
+  host: <%= ENV['PGHOST'] %>
+  username: <%= ENV['PGUSER'] %>
+
+development:
+  <<: *default
+  database: webcv_development
+
+production:
+  <<: *default
+  database: webcv_production
