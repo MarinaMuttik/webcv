@@ -1,2 +1,10 @@
 div.content
-  a href="mailto:mmuttik@live.co.uk?subject=Web%20CV" class="contact" Contact me!
+  form name="contact" method="post" action="/private/contact/submit"
+    input type="text" name="message[contact_name]" placeholder="Your name" required="true"
+    br
+    input type="text" name="message[contact_message]" placeholder="Enter message here" required="true" class="textarea"
+    br
+    input type="submit" value="Send"
+
+div.content
+  a href="mailto:mmuttik@live.co.uk?subject=Web%20CV" class="contact" Email me directly
