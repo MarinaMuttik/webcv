@@ -1,5 +1,6 @@
 development:
-  database: webcv_development
-  encoding: utf8
+  adapter: postgresql
   host: <%= ENV['PGHOST'] %>
   username: <%= ENV['PGUSER'] %>
+  database: webcv_development
+  encoding: utf8
