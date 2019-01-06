@@ -8,6 +8,7 @@ gem "activerecord"
 gem "sinatra-activerecord"
 gem 'pg'
 gem 'rake'
-gem "table_print"
-gem "pry"
- 
+
+group :production do
+  gem "pg"
+end
