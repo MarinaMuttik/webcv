@@ -10,3 +10,4 @@ gem 'pg'
 gem 'rake'
 gem "table_print"
 gem "pry"
+ 

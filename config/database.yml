@@ -1,13 +1,5 @@
-default: &default
-  adapter: postgresql
+development:
+  database: webcv_development
   encoding: utf8
   host: <%= ENV['PGHOST'] %>
   username: <%= ENV['PGUSER'] %>
-
-development:
-  <<: *default
-  database: webcv_development
-
-production:
-  <<: *default
-  database: webcv_production
