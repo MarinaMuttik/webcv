@@ -2,7 +2,7 @@ require File.expand_path '../../acceptance_helper.rb', __FILE__
 
 feature "Send a message" do
 
-  scenario 'successful send', js: true do
+  scenario 'successfully send', js: true do
     visit '/contact'
     expect(page).to have_css('form')
     fill_in 'message[contact_name]', with: 'a' * 20

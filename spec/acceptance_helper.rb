@@ -8,7 +8,7 @@ Capybara.register_driver :selenium do |app|
 end
 
 Capybara.configure do |config|
-  config.app = Public
+  config.app = Rack::Builder.parse_file('config.ru').first
   config.javascript_driver = :selenium
   config.default_driver = :rack_test
   config.server = :puma
