@@ -8,10 +8,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Requires Ruby version 2.5.1 and Postgres to be installed.
+Requires Ruby version 2.5.1, Postgres, and Chromedriver to be installed.
 
 To install Ruby and RVM, use the steps outlined [here](https://github.com/rvm/ubuntu_rvm)
 To install Postgres, use the steps outlined [here](http://postgresguide.com/setup/install.html). A database and environmental variables / login details will need to be set up to match / be modified as in config/database.yml file for development. I used PGAdmin3 to look over the database, and can be found [here](https://www.pgadmin.org/).
+To install Chromdriver, use the gem chromedriver-helper and follow the steps outlined [here](https://github.com/flavorjones/chromedriver-helper)
 
 ### Installing
 
