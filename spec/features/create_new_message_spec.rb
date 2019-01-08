@@ -9,6 +9,5 @@ feature "Send a message" do
     fill_in 'message[contact_message]', with: 'b' * 20
     find('#btn').click
     expect(page).to have_selector('p', text: 'successfully sent!')
-
   end
 end
