@@ -2,6 +2,7 @@ development:
   adapter: postgresql
   host: <%= ENV['PGHOST'] %>
   username: <%= ENV['PGUSER'] %>
+  password: <%= ENV['PGPASS'] %>
   database: webcv_development
   encoding: utf8
 
@@ -9,5 +10,6 @@ test:
   adapter: postgresql
   host: <%= ENV['PGHOST'] %>
   username: <%= ENV['PGUSER'] %>
+  password: <%= ENV['PGPASS'] %>
   database: webcv_development
   encoding: utf8
