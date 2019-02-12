@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_30_222946) do
+ActiveRecord::Schema.define(version: 2019_02_12_221246) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "adminpack"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_12_30_222946) do
     t.string "contact_name"
     t.text "contact_message"
     t.datetime "created_at", null: false
+    t.string "contact_email"
   end
 
 end
